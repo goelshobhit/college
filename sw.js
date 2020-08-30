@@ -8,7 +8,7 @@ var __wpo = {
     "additional": [
       "/college/npm.intl.bd8f19d9c7d9ab22c1c5.chunk.js",
       "/college/npm.webpack.dfa8948f958f0e56c47d.chunk.js",
-      "/college/main.0719caf316f20f22a626.chunk.js",
+      "/college/main.8344e6cdf6ce6260132e.chunk.js",
       "/college/npm.babel.9c8315ae262588160acb.chunk.js",
       "/college/npm.connected-react-router.21fd9e15175b1c45a2ce.chunk.js",
       "/college/npm.core-js.1735cf27fe566e6f4047.chunk.js",
@@ -30,7 +30,7 @@ var __wpo = {
     "5e53ef208f3fa79a48f8374488f473c76e1233de": "/college/favicon.ico",
     "1e7fd4463861aeb6a378cf7fb56273f34f47d204": "/college/npm.intl.bd8f19d9c7d9ab22c1c5.chunk.js",
     "7e8b365af072c84395f57e0f38da74b78401b795": "/college/npm.webpack.dfa8948f958f0e56c47d.chunk.js",
-    "a978b7ecad674834845b7d83b271b1c309b5dd0f": "/college/main.0719caf316f20f22a626.chunk.js",
+    "056c92347293d516c16f94c57ee91047fa593034": "/college/main.8344e6cdf6ce6260132e.chunk.js",
     "ebe9a4a95d0a006cbfd50a0be84e7d4649bf5d82": "/college/npm.babel.9c8315ae262588160acb.chunk.js",
     "2763f82d13ab81b83be58d7be642e1675f0db221": "/college/npm.connected-react-router.21fd9e15175b1c45a2ce.chunk.js",
     "c167b7137c8348a3e7b49cc7de047c7b0a55e6f1": "/college/npm.core-js.1735cf27fe566e6f4047.chunk.js",
@@ -45,11 +45,11 @@ var __wpo = {
     "689f96869f26801469bd73220a26570d7f259426": "/college/14.adbe25a1e41b60642604.chunk.js",
     "85ba4073e2da5aa7c8185dc74131ff8bd10cfd0b": "/college/15.0c683a24d744d2207bc3.chunk.js",
     "92685836f306abe727791678de887b69dab75d30": "/college/16.c2b7dc539ee4eb779204.chunk.js",
-    "e2dd47d06822fcd76d1353b566a3153b30d23de6": "/college/"
+    "5cdfd8e18163b338e55628e55cb500a82da47389": "/college/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "8/30/2020, 8:10:01 PM",
+  "version": "8/30/2020, 8:19:49 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": false
