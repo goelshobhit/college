@@ -1,55 +1,55 @@
 var __wpo = {
   "assets": {
     "main": [
-      "/favicon.ico",
-      "/runtime.cd20e3a34a2707eebc9a.js",
-      "/"
+      "/college/favicon.ico",
+      "/college/runtime.a379d2f915b981871de9.js",
+      "/college/"
     ],
     "additional": [
-      "/npm.intl.bd8f19d9c7d9ab22c1c5.chunk.js",
-      "/npm.webpack.dfa8948f958f0e56c47d.chunk.js",
-      "/main.cb64e41987b23367a303.chunk.js",
-      "/npm.babel.9c8315ae262588160acb.chunk.js",
-      "/npm.connected-react-router.21fd9e15175b1c45a2ce.chunk.js",
-      "/npm.core-js.1735cf27fe566e6f4047.chunk.js",
-      "/npm.hoist-non-react-statics.b7da0fc644e8de09eb6a.chunk.js",
-      "/npm.lodash.1f84df8f5e570e361238.chunk.js",
-      "/npm.react-app-polyfill.2f4229475bedddac6a47.chunk.js",
-      "/npm.react-redux.c6544396851c29deef64.chunk.js",
-      "/npm.react-router.771364637ca1dc8fb78f.chunk.js",
-      "/npm.react-router-dom.72118a0de6048df1d4b0.chunk.js",
-      "/npm.redux-saga.924710b066900fc92338.chunk.js",
-      "/14.adbe25a1e41b60642604.chunk.js",
-      "/15.0c683a24d744d2207bc3.chunk.js",
-      "/16.c2b7dc539ee4eb779204.chunk.js"
+      "/college/npm.intl.bd8f19d9c7d9ab22c1c5.chunk.js",
+      "/college/npm.webpack.dfa8948f958f0e56c47d.chunk.js",
+      "/college/main.0719caf316f20f22a626.chunk.js",
+      "/college/npm.babel.9c8315ae262588160acb.chunk.js",
+      "/college/npm.connected-react-router.21fd9e15175b1c45a2ce.chunk.js",
+      "/college/npm.core-js.1735cf27fe566e6f4047.chunk.js",
+      "/college/npm.hoist-non-react-statics.b7da0fc644e8de09eb6a.chunk.js",
+      "/college/npm.lodash.1f84df8f5e570e361238.chunk.js",
+      "/college/npm.react-app-polyfill.2f4229475bedddac6a47.chunk.js",
+      "/college/npm.react-redux.c6544396851c29deef64.chunk.js",
+      "/college/npm.react-router.771364637ca1dc8fb78f.chunk.js",
+      "/college/npm.react-router-dom.72118a0de6048df1d4b0.chunk.js",
+      "/college/npm.redux-saga.924710b066900fc92338.chunk.js",
+      "/college/14.adbe25a1e41b60642604.chunk.js",
+      "/college/15.0c683a24d744d2207bc3.chunk.js",
+      "/college/16.c2b7dc539ee4eb779204.chunk.js"
     ],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
-    "5e53ef208f3fa79a48f8374488f473c76e1233de": "/favicon.ico",
-    "1e7fd4463861aeb6a378cf7fb56273f34f47d204": "/npm.intl.bd8f19d9c7d9ab22c1c5.chunk.js",
-    "7e8b365af072c84395f57e0f38da74b78401b795": "/npm.webpack.dfa8948f958f0e56c47d.chunk.js",
-    "cf4097ee0720cf1faad36e51fa48f89a04062ea3": "/main.cb64e41987b23367a303.chunk.js",
-    "ebe9a4a95d0a006cbfd50a0be84e7d4649bf5d82": "/npm.babel.9c8315ae262588160acb.chunk.js",
-    "2763f82d13ab81b83be58d7be642e1675f0db221": "/npm.connected-react-router.21fd9e15175b1c45a2ce.chunk.js",
-    "c167b7137c8348a3e7b49cc7de047c7b0a55e6f1": "/npm.core-js.1735cf27fe566e6f4047.chunk.js",
-    "dcf18ab960e4e42ab86f1318253cd700526c4c62": "/npm.hoist-non-react-statics.b7da0fc644e8de09eb6a.chunk.js",
-    "48d7177420fe3851004eb3ae0d8df90511416b06": "/npm.lodash.1f84df8f5e570e361238.chunk.js",
-    "384db8872e57d4e02a0fc63bb58773287cfd3a8a": "/npm.react-app-polyfill.2f4229475bedddac6a47.chunk.js",
-    "2561966a561701d39324c748492e90d8c1e89408": "/npm.react-redux.c6544396851c29deef64.chunk.js",
-    "3fa654a7fb3d3737050ad22171f7c6d467419313": "/npm.react-router.771364637ca1dc8fb78f.chunk.js",
-    "a076f1e2cdc32597137c5edd6573311898545737": "/npm.react-router-dom.72118a0de6048df1d4b0.chunk.js",
-    "4fff16989b47351347e3bf5540cc0d5c886b6166": "/npm.redux-saga.924710b066900fc92338.chunk.js",
-    "6afc33271546b9d64ff08aefe874053b04b50593": "/runtime.cd20e3a34a2707eebc9a.js",
-    "689f96869f26801469bd73220a26570d7f259426": "/14.adbe25a1e41b60642604.chunk.js",
-    "85ba4073e2da5aa7c8185dc74131ff8bd10cfd0b": "/15.0c683a24d744d2207bc3.chunk.js",
-    "92685836f306abe727791678de887b69dab75d30": "/16.c2b7dc539ee4eb779204.chunk.js",
-    "17279b37a7d91b5db9d3a5f538ff930e3ef0cbcf": "/"
+    "5e53ef208f3fa79a48f8374488f473c76e1233de": "/college/favicon.ico",
+    "1e7fd4463861aeb6a378cf7fb56273f34f47d204": "/college/npm.intl.bd8f19d9c7d9ab22c1c5.chunk.js",
+    "7e8b365af072c84395f57e0f38da74b78401b795": "/college/npm.webpack.dfa8948f958f0e56c47d.chunk.js",
+    "a978b7ecad674834845b7d83b271b1c309b5dd0f": "/college/main.0719caf316f20f22a626.chunk.js",
+    "ebe9a4a95d0a006cbfd50a0be84e7d4649bf5d82": "/college/npm.babel.9c8315ae262588160acb.chunk.js",
+    "2763f82d13ab81b83be58d7be642e1675f0db221": "/college/npm.connected-react-router.21fd9e15175b1c45a2ce.chunk.js",
+    "c167b7137c8348a3e7b49cc7de047c7b0a55e6f1": "/college/npm.core-js.1735cf27fe566e6f4047.chunk.js",
+    "dcf18ab960e4e42ab86f1318253cd700526c4c62": "/college/npm.hoist-non-react-statics.b7da0fc644e8de09eb6a.chunk.js",
+    "48d7177420fe3851004eb3ae0d8df90511416b06": "/college/npm.lodash.1f84df8f5e570e361238.chunk.js",
+    "384db8872e57d4e02a0fc63bb58773287cfd3a8a": "/college/npm.react-app-polyfill.2f4229475bedddac6a47.chunk.js",
+    "2561966a561701d39324c748492e90d8c1e89408": "/college/npm.react-redux.c6544396851c29deef64.chunk.js",
+    "3fa654a7fb3d3737050ad22171f7c6d467419313": "/college/npm.react-router.771364637ca1dc8fb78f.chunk.js",
+    "a076f1e2cdc32597137c5edd6573311898545737": "/college/npm.react-router-dom.72118a0de6048df1d4b0.chunk.js",
+    "4fff16989b47351347e3bf5540cc0d5c886b6166": "/college/npm.redux-saga.924710b066900fc92338.chunk.js",
+    "1236b985ed88bb983e547a8fa7ea7523ec76ff4f": "/college/runtime.a379d2f915b981871de9.js",
+    "689f96869f26801469bd73220a26570d7f259426": "/college/14.adbe25a1e41b60642604.chunk.js",
+    "85ba4073e2da5aa7c8185dc74131ff8bd10cfd0b": "/college/15.0c683a24d744d2207bc3.chunk.js",
+    "92685836f306abe727791678de887b69dab75d30": "/college/16.c2b7dc539ee4eb779204.chunk.js",
+    "e2dd47d06822fcd76d1353b566a3153b30d23de6": "/college/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "8/30/2020, 7:57:49 PM",
+  "version": "8/30/2020, 8:10:01 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": false
@@ -134,7 +134,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/college/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
