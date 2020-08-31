@@ -56,12 +56,12 @@
       "type": "image/png"
     }
   ],
-  "name": "React Boilerplate",
-  "short_name": "React BP",
+  "name": "College",
+  "short_name": "College",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": ".",
-  "description": "My React Boilerplate-based project!",
+  "description": "College",
   "background_color": "#fafafa",
   "theme_color": "#b1624d"
 }
