@@ -11,3 +11,13 @@
   font-weight: 500;
   color: var(--greyish-brown);
 }
+
+.List {
+  min-height: 77vh;
+}
+
+.List div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

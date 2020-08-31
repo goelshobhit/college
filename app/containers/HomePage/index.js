@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /**
  *
  * HomePage
@@ -15,6 +16,7 @@ import { FixedSizeList as List } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
 
 import Loader from 'components/Loader';
+import CollegeCard from 'components/CollegeCard';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
@@ -41,7 +43,9 @@ export function HomePage({
     return hasMore;
   }
 
-  const Row = () => <div>I am a row</div>;
+  const Row = ({ index, style }) => (
+    <CollegeCard collegeData={data[index]} style={style} className="card" />
+  );
 
   if (loading) {
     return <Loader />;
@@ -58,7 +62,7 @@ export function HomePage({
         itemCount={1000}
         loadMoreItems={loadMoreItems}
         minimumBatchSize={10}
-        threshold={100}
+        threshold={250}
       >
         {({ onItemsRendered, ref }) => (
           <List

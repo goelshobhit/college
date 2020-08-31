@@ -1,0 +1,28 @@
+@import '../../globalStyles.css';
+
+.college-card {
+  width: 100%;
+  height: 337px;
+  border-radius: 3.8px;
+  box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+  border: solid 0.2px var(--greyish-brown);
+  background-color: #ffffff;
+  margin-bottom: 74.7px;
+}
+
+
+.college-image {
+  width: 100%;
+  height: 233.2px;
+}
+
+.image-overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (min-width: 600px) {
+  .college-card {
+    width: 48%;
+  }
+}
