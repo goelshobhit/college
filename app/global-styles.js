@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #ffffff;
     min-height: 100%;
     min-width: 100%;
+    overflow: hidden;
   }
 
   p,

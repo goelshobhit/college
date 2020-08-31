@@ -14,6 +14,8 @@ import { compose } from 'redux';
 import { FixedSizeList as List } from 'react-window';
 import InfiniteLoader from 'react-window-infinite-loader';
 
+import Loader from 'components/Loader';
+
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectHomePage from './selectors';
@@ -26,7 +28,7 @@ import './style.css';
 
 export function HomePage({
   OnRequestCollegesData,
-  homePage: { hasMore, data },
+  homePage: { hasMore, data, loading },
 }) {
   useInjectReducer({ key: 'homePage', reducer });
   useInjectSaga({ key: 'homePage', saga });
@@ -41,6 +43,10 @@ export function HomePage({
 
   const Row = () => <div>I am a row</div>;
 
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="homePage">
       <div className="heading">
@@ -51,6 +57,8 @@ export function HomePage({
         isItemLoaded={isItemLoaded}
         itemCount={1000}
         loadMoreItems={loadMoreItems}
+        minimumBatchSize={10}
+        threshold={100}
       >
         {({ onItemsRendered, ref }) => (
           <List
