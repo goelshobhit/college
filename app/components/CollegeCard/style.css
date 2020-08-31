@@ -2,27 +2,368 @@
 
 .college-card {
   width: 100%;
-  height: 337px;
   border-radius: 3.8px;
   box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
-  border: solid 0.2px var(--greyish-brown);
+  border: solid 0.2px var(--greyish-brown-opacity);
   background-color: #ffffff;
   margin-bottom: 74.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-
 
 .college-image {
   width: 100%;
   height: 233.2px;
+  box-shadow: inset 0 0 0 2000px rgb(16 0 0 / 74%);
 }
 
 .image-overlay {
   width: 100%;
+  height: 233.2px;
   background: rgba(0, 0, 0, 0.7);
+}
+
+.promoted {
+    width: 152px;
+    padding: 0.5%;
+    background-color: var(--sky-blue);
+    font-family: var(--DNProMediumStack);
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    right: 57px;
+    transform: translateY(-11px);
+}
+
+.flag {
+  border-top: 16px solid transparent;
+  border-left: 32px solid #ffffff;
+  border-bottom: 16px solid transparent;
+  transform: translate(33.4vw, -18px);
+  -webkit-transform: translate(33.4vw, -18px);
+  -moz-transform: translate(33.4vw, -18px);
+  -ms-transform: translate(33.4vw, -18px);
+  -o-transform: translate(33.4vw, -18px);
+  position: absolute;
+  z-index: 1;
+}
+
+.rating {
+  width: 75px;
+  height: 53px;
+  border-radius: 3.8px;
+  background-color: var(--squash);
+  position: absolute;
+  transform: translate(38vw, 21px);
+  -webkit-transform: translate(38vw, 21px);
+  -moz-transform: translate(38vw, 21px);
+  -ms-transform: translate(38vw, 21px);
+  -o-transform: translate(38vw, 21px);
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: row;
+}
+
+.ratings-bigger {
+  font-size: 18px;
+  padding-right: 5px;
+  margin-top: -5px;
+}
+
+.rankings-and-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(200px);
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  -o-transform: translateY(200px);
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 44%;
+  margin: 0 2% 2% 2%;
+}
+
+.tags {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transform: translateY(-14px);
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--greyish-brown);
+  margin-right: 7px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ranking-comment {
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  margin-right: 10px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.college-name-container, .college-offer-text, .location-container, .amenties-container, .discount-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.college-name-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.college-name {
+  font-family: var(--DNProMediumStack);
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--greyish-brown);
+  margin-right: 11px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.college-info {
+  margin-left: 17px;
+  width: 96%;
+}
+
+.original-fee {
+  font-family: var(--DNProMediumStack);
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--greyish-brown);
+  text-decoration: line-through;
+  margin-right: 5px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.discount {
+  width: 29px;
+  height: 14px;
+  background-color: var(--red);
+  font-family: var(--DNProMediumStack);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.64;
+  text-align: center;
+  color: var(--greyish-brown);
+  color: #ffffff;
+  padding-bottom: 20px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location-1 {
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--greyish-brown);
+  margin-right: 6px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location-2 {
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: center;
+  color: #adadad;
+  margin-left: 6px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.separator {
+  color: #adadad;
+}
+
+.discount-fee {
+  font-family: var(--DNProMediumStack);
+  font-size: 28.5px;
+  font-weight: bold;
+  color: #dd1c26;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.per-semester {
+  font-family: var(--DNProMediumStack);
+  font-size: 11px;
+  color: var(--greyish-brown);
+}
+
+.match {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #adadad;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.match-percent {
+  color: var(--green-blue);
+}
+
+.offer-text {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--greyish-brown);
+  margin-top: 9px;
+  background-color: var(--greeny-blue-three);
+  width: 60%;
+  padding: 11px;
+  transform: translateX(-17px);
+  padding-left: 31px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.amenties-1, .amenties-separator {
+  font-family: var(--DNProMediumStack);
+  font-size: 13.5px;
+  font-weight: bold;
+  color: var(--greeny-blue-two);
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.amenties-separator {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.amenties-container  {
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  overflow: hidden;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media only screen and (min-width: 600px) {
   .college-card {
     width: 48%;
+  }
+  .promoted {
+    transform: translate(33.55vw, -18px);
+    -webkit-transform: translate(33.55vw, -18px);
+    -moz-transform: translate(33.55vw, -18px);
+    -ms-transform: translate(33.55vw, -18px);
+    -o-transform: translate(33.55vw, -18px);
+    right: auto;
+  }
+  .college-name-container, .college-offer-text, .location-container, .amenties-container, .discount-container {
+    flex-direction: row;
   }
 }

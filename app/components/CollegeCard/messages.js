@@ -9,8 +9,12 @@ import { defineMessages } from 'react-intl';
 export const scope = 'app.components.CollegeCard';
 
 export default defineMessages({
-  header: {
-    id: `${scope}.header`,
-    defaultMessage: 'This is the CollegeCard component!',
+  subHeading: {
+    id: `${scope}.subHeading`,
+    defaultMessage: 'Per Semester (3months)',
+  },
+  match: {
+    id: `${scope}.match`,
+    defaultMessage: '93% Match : ',
   },
 });

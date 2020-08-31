@@ -2,10 +2,12 @@
   --sky-blue: #68a7ff;
   --green-blue: #37b396;
   --greeny-blue-two: #4bb89e;
+  --greeny-blue-three :#4bb89e3d;
   --water-blue: #1999d2;
   --red: #ff0000;
   --squash: #f5a626;
   --greyish-brown: #444444;
+  --greyish-brown-opacity: rgba(68, 68, 68, 0.1);
   --DNProBoldStack: 'DNProBold', serif;
   --DNProMediumStack: 'DNProMedium', sans-serif;
 }
