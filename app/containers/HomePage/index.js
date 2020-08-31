@@ -11,26 +11,67 @@ import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
+import { FixedSizeList as List } from 'react-window';
+import InfiniteLoader from 'react-window-infinite-loader';
+
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectHomePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import { requestColleges } from './actions';
 
-export function HomePage() {
+import './style.css';
+
+export function HomePage({
+  OnRequestCollegesData,
+  homePage: { hasMore, data },
+}) {
   useInjectReducer({ key: 'homePage', reducer });
   useInjectSaga({ key: 'homePage', saga });
 
+  const loadMoreItems = () => {
+    OnRequestCollegesData();
+  };
+
+  function isItemLoaded() {
+    return hasMore;
+  }
+
+  const Row = () => <div>I am a row</div>;
+
   return (
-    <div>
-      <FormattedMessage {...messages.header} />
+    <div className="homePage">
+      <div className="heading">
+        <FormattedMessage {...messages.header} />
+      </div>
+
+      <InfiniteLoader
+        isItemLoaded={isItemLoaded}
+        itemCount={1000}
+        loadMoreItems={loadMoreItems}
+      >
+        {({ onItemsRendered, ref }) => (
+          <List
+            className="List"
+            height={150}
+            itemCount={data.length === 0 ? 10 : data.length}
+            itemSize={30}
+            onItemsRendered={onItemsRendered}
+            ref={ref}
+          >
+            {Row}
+          </List>
+        )}
+      </InfiniteLoader>
     </div>
   );
 }
 
 HomePage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
+  OnRequestCollegesData: PropTypes.func,
+  homePage: PropTypes.object,
 };
 
 const mapStateToProps = createStructuredSelector({
@@ -39,7 +80,7 @@ const mapStateToProps = createStructuredSelector({
 
 function mapDispatchToProps(dispatch) {
   return {
-    dispatch,
+    OnRequestCollegesData: () => dispatch(requestColleges()),
   };
 }
 

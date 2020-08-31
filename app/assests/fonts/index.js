@@ -2,17 +2,21 @@ import DinProBold from './DINPro-Bold.ttf';
 import DinProMedium from './DINPro-Medium.ttf';
 
 const fonts = () => `@font-face {
-    font-family: 'DinProBold';
+    font-family: 'DNProBold';
     src: url(${DinProBold}) format('opentype');
-    font-weight: 100;
     font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-weight: 100;
   }
 
   @font-face {
-    font-family: 'DinProMedium';
+    font-family: 'DNProMedium';
     src: url(${DinProMedium}) format('opentype');
-    font-weight: 100;
     font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-weight: 100;
   }`;
 
 export default fonts;

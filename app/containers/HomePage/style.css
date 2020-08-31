@@ -1,0 +1,13 @@
+@import '../../globalStyles.css';
+
+.homePage {
+  padding: 49px 56px 49px 56px;
+}
+
+.heading {
+  padding-bottom: 67.8px;
+  font-family: var(--DNProMediumStack);
+  font-size: 18.5px;
+  font-weight: 500;
+  color: var(--greyish-brown);
+}
