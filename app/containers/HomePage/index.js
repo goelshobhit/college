@@ -1,19 +1,17 @@
-/* eslint-disable react/prop-types */
 /**
  *
  * HomePage
  *
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import { FixedSizeList as List } from 'react-window';
-import InfiniteLoader from 'react-window-infinite-loader';
+import InfiniteScroll from 'react-infinite-scroller';
 
 import Loader from 'components/Loader';
 import CollegeCard from 'components/CollegeCard';
@@ -35,20 +33,16 @@ export function HomePage({
   useInjectReducer({ key: 'homePage', reducer });
   useInjectSaga({ key: 'homePage', saga });
 
-  const loadMoreItems = () => {
-    OnRequestCollegesData();
-  };
+  useEffect(() => loadMoreItems(), []);
 
-  function isItemLoaded() {
-    return hasMore;
+  function loadMoreItems() {
+    OnRequestCollegesData();
   }
 
-  const Row = ({ index, style }) => (
-    <CollegeCard collegeData={data[index]} style={style} className="card" />
-  );
-
-  if (loading) {
-    return <Loader />;
+  function renderItems() {
+    return data.map(item => (
+      <CollegeCard collegeData={item} key={item.college_name} />
+    ));
   }
 
   return (
@@ -57,26 +51,15 @@ export function HomePage({
         <FormattedMessage {...messages.header} />
       </div>
 
-      <InfiniteLoader
-        isItemLoaded={isItemLoaded}
-        itemCount={1000}
-        loadMoreItems={loadMoreItems}
-        minimumBatchSize={10}
-        threshold={250}
+      <InfiniteScroll
+        pageStart={0}
+        loadMore={loadMoreItems}
+        hasMore={hasMore}
+        loader={loading ? <Loader key="loader" /> : null}
+        className="List"
       >
-        {({ onItemsRendered, ref }) => (
-          <List
-            className="List"
-            height={150}
-            itemCount={data.length === 0 ? 10 : data.length}
-            itemSize={30}
-            onItemsRendered={onItemsRendered}
-            ref={ref}
-          >
-            {Row}
-          </List>
-        )}
-      </InfiniteLoader>
+        {renderItems()}
+      </InfiniteScroll>
     </div>
   );
 }
